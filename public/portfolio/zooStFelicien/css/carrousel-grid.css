@@ -1,0 +1,120 @@
+.carrousel-grid{
+    max-width: 100%;
+}
+
+.carrousel-grid form{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grille{
+    display: grid;
+    grid-template-columns: repeat(var(--colonnescarrousel), 1fr);
+    gap: 20px;
+    line-height: 0;
+}
+
+.conteneur{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.grille img{
+    width: 100%;
+    height: auto;
+    height: 60vh;
+    object-fit: cover;
+    position: 100%;
+    border-radius: 3px;
+    display: block;
+}
+
+.description{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--color-main-darkened) /* #0b1518; */
+}
+
+.conteneur:hover .description{
+    opacity: 0.8;
+}
+
+.description-texte{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    line-height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    top: 40%;
+    padding: 0 10px;
+}
+
+.rechercher{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
+
+label{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+form select{
+    box-sizing: border-box;
+    border-radius: 3px; 
+    outline: 2px solid white;
+    border:2px solid var(--color-main-bleu);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15); 
+    padding: 10px; 
+    width: 20vw;
+    font-size: 17px;
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+    color: grey;
+    margin-bottom: 10px;
+    min-width: 200px;
+}
+
+form select:focus{
+    padding: 10px 20px; 
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15); 
+    border: 2px solid var(--color-rose);
+    outline: 2px solid white;
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+option{
+    text-align: center;
+}
+
+@media all{
+    :root{
+        --colonnescarrousel: 3;
+    }
+}
+
+@media screen and (max-width: 980px){ /* nettoyer la variable */
+    :root{
+        --colonnescarrousel: 2;
+    }
+
+    .rechercher{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 680px){ 
+    :root{
+        --colonnescarrousel: 1;
+    }
+}

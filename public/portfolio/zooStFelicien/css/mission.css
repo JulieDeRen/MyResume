@@ -1,0 +1,67 @@
+/*** ANCHOR mission statement ***/
+
+/* la mission doit être lû clairement dans une typographie qui exprime son importance et sa finesse */
+.mission { 
+    font-family: var(--font-normal);
+}
+
+[id=mission-statement] h2 {
+  max-width: 30ch; /* j'ai changé de 50 à 40ch*/
+  margin: auto;
+  font-size: calc(var(--size-font)*2.2);
+  margin-top: calc(80px + 60px);
+  margin-bottom: calc(80px + 60px); 
+  text-align: justify;
+}
+
+[id=mission-statement] article {
+  min-height: 350px;
+  justify-content: end;
+}
+
+[id=mission-statement] .content-on-image a {
+  padding: 20px;
+  width: calc(100% - 40px);
+  max-width: 100%; 
+  border-radius: 0 0 3px 3px;
+}
+
+@media all and (max-width: 850px){
+
+  [id=mission-statement] h2 {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+}
+
+@media all and (max-width: 595px){
+
+  [id=mission-statement] h2 {
+    font-size: calc(var(--size-font)*2.5);
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media all and (max-width: 550px){
+
+  [id=mission-statement] h2 {
+    font-size: calc(var(--size-font)*2);
+  }
+}
+
+@media all and (max-width: 450px){
+  [id=mission-statement] h2 {
+    font-size: calc(var(--size-font)*1.75);
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media all and (max-width: 330px){
+  [id=mission-statement] h2 {
+    font-size: calc(var(--size-font)*1.5);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

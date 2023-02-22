@@ -1,0 +1,40 @@
+  /*** Format texte sur image commun à presque tous ***/
+  
+.content-on-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+}
+
+.content-on-image>img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+.content-on-image>* {
+  position: relative;
+  margin: 0;
+}
+
+/* J'ai ajouté cette sélection pour libérer l'image et positionner le texte sur la zone neutre de l'image.  L'importance ce cette image se trouve aux yeux et bouches des bébés cougars.  De cette manière, à mon avis l'on apprécie davantage la beauté de l'image */
+.content-on-image h1{ /* ou bien .content-on-image-accueil h1 */
+  margin-top: 300px; 
+  position: relative;
+  margin-bottom: 15px; 
+}
+
+/* Format des boutons superposants les images */
+.content-on-image a {
+  text-align: center;
+}
+
+/* Rythme dans les éléments successifs */
+.content-on-image>*+* {
+  margin-top: 20px;
+}

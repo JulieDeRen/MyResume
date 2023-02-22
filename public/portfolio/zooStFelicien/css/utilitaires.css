@@ -1,0 +1,300 @@
+/***** ANCHOR ROOT *****/
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Fredoka+One&display=swap');
+
+:root {
+  --color-main: rgb(248, 181, 38);
+  --color-main-clair: rgb(255, 210, 113);
+  --color-main-darkened: rgb(55, 112, 16);
+  --color-main-bleu: rgb(1, 115, 202);
+  --color-font-norm: black;
+  --color-font-emph: white;
+  --color-rose: rgb(234, 39, 114);
+  --size-font: 18px;
+  --font-normal: 'Catamaran', sans-serif;   
+  --font-titles: 'Fredoka One', cursive;
+  --veil-white: rgba(255,255,255,0.75);
+  --switch-button: 15px;
+}
+
+/* Rétablir les marges intérieures & extérieures sur tout */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/***** ANCHOR RYTHME ET RÈGLES BASES *****/
+
+/* Rythme vertical espacé pour bien dégager les principaux conteneurs de contenu */
+/* augmenter l'espacement pour que ça soit apparaisse la même hauteur que le bouton large  */
+body>*+*:where(:not(input[type=checkbox])){
+  margin-top: 120px; 
+}
+
+/* Rythme vertical de base pour tous les éléments de contenu */
+*+p, *+img:where(:not(.parallax-composante img)), *+a, *+h1, *h2+, *+h3, *+h4, *+h5, *+h6 { 
+  margin-top: 20px; 
+}
+
+*+small { 
+  margin-top: 10px; 
+}
+
+/* Limiter et centrer les principales sections de contenu */
+body>section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Rythme vertical de base pour les éléments de section */
+section>*+* {
+  margin-top: 20px; 
+}
+
+/* Base typographique à être héritée */
+html {
+  font-family: var(--font-normal);
+  line-height: 1.5625;
+}
+
+/* Largeur maximale de toute ligne de paragraphe pour une lisibilité adéquate */
+p { 
+  max-width: 60ch; 
+}
+
+/* Interlignage propre aux titres (moins espacé que le contenu courant) */
+h1, h2 , h3, h4, h5 {
+  font-family: var(--font-titles);
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Échelle typographique */
+h1 {
+  font-size: calc(var(--size-font)*3.25);
+  color: var(--color-font-emph)
+}
+
+h2 {
+  font-size: calc(var(--size-font)*2.2); 
+  margin-bottom: 80px; 
+}
+h2:not(.mission) {
+  margin-bottom: 80px; 
+}
+
+h3 {
+  font-size: calc(var(--size-font)*1.55);
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: calc(var(--size-font)*1.4);
+  letter-spacing: 1px;
+}
+
+h5, .large-button {
+  font-size: calc(var(--size-font)*1.25);
+  letter-spacing: 1px;
+}
+
+a {
+  font-size: calc(var(--size-font)*1.1);
+}
+
+small {
+  font-size: calc(var(--size-font)*0.95);
+}
+
+.promo{
+  font-size: calc(var(--size-font)*2.2); 
+}
+
+.button,
+.button-economie, .button-participe {
+  font-size: calc(var(--size-font)*1.25);
+}
+
+[id=mission-statement] h2 {
+  font-size: calc(var(--size-font)*2.2);
+}
+
+[id=call-action] a {
+  font-size: calc(var(--size-font) * 1.5);
+}
+
+[id=call-action] small {
+  font-size: calc(var(--size-font) * 1.1);
+}
+
+.bouton-decouvrir{
+    font-size: calc(var(--size-font)*1.55);
+    letter-spacing: 1px;
+}
+
+/* Début Fiche */
+.evenement-typo-h3{
+  font-size: calc(var(--size-font)*2);
+  font-family: var(--font-normal);
+  text-align: center;
+}
+.evenement-typo-h4{
+  font-size: calc(var(--size-font) * 1.5);
+  font-family: var(--font-normal);
+  text-align: left;
+}
+
+.espacement-debut-page{
+  margin-top: 60px;
+}
+
+/* Fin Fiche */
+
+/* Pour avoir plus de controle sur les éléments en ligne utilisés seuls */
+a, small {
+  display: inline-block;
+  line-height: 1.4;
+  color: inherit;
+}
+
+/***** ANCHOR UTILITY CLASSES *****/
+
+
+/*** Boutons ***/
+    
+/* Format des boutons standards */
+/* j'ai séparé les boutons pour créer de la variation de couleur pour le survol afin d'ajouter du dynamisme et de la nouveauté */
+.button,
+.button-economie {
+  letter-spacing: 0.5px;
+  padding: 15px 20px; 
+  background-color: var(--color-main);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  transition-duration: 100ms;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15); 
+  font-weight: bold;
+  font-size:20px;
+}
+
+.button-economie {
+  margin-bottom: 75px; /* pas de publicité pour enfant ! Ajouter de l'espace pour cacher le bouton */
+}
+
+.large-button {
+  background-color: var(--color-main);
+  transition-duration: 100ms;
+  color: black;
+  height: 70px; 
+  text-decoration: none; 
+}
+
+.large-button:hover{
+  background-color: var(--color-main-bleu);
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: underline;
+}
+
+/* Transition des boutons ----- J'ai ajouté la spécificité a.bouton*/
+a.button:hover{ 
+  background-color: var(--color-main-darkened);
+  color: var(--color-font-emph);
+}
+
+.button-economie:hover{ 
+  background-color: var(--color-main-bleu);
+  color: var(--color-font-emph);
+  padding: 15px 30px;
+  transition: 150ms;
+}
+.button-economie {
+  margin-bottom: 150px; /* pas de publicité pour enfant ! Ajouter de l'espace pour cacher le bouton */
+}
+
+.button:hover{
+  padding: 15px 30px;
+  transition: 150ms;
+}
+
+a:active {
+  box-shadow: none;
+}
+
+/* Transition des liens */
+small>a:hover {
+  color: var(--color-main);
+  background-color: none;
+}
+
+/*** Éléments base flex ***/
+
+/* Contexte flex horizontal avec marge par espacement */
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Contexte flex vertical avec alignement au centre */
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-vertical>img{
+  border-radius: 3px; /*j'ai ajouté*/
+}
+
+/*** Largeur des contenus ***/
+/* Largeur de base de tout enfant de la grille */
+
+/* Formats tiers */
+.one-third {
+  width: calc(33% - 10px);
+}
+
+.two-thirds {
+  width: calc(67% - 10px);
+}
+
+/*** Shadows ***/
+.box-shadow {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+/***** SECTION RÈGLES SPÉCIFIQUES *****/
+
+/*** ANCHOR header ***/
+
+/* Donner un style « boîte de couleur » et forcer la pleine largeur */
+body>header {
+  margin: 0;
+}
+
+.header{
+  position: fixed;
+  top:0;
+}
+
+/* Bouton sur une ligne */
+header.content-on-image>.button {
+  white-space: nowrap;
+}
+
+img:where(:not(.logo, .parallax-composante img)){
+  object-fit: cover;
+}
+
+  /*** ANCHOR location ***/
+
+[id=map] * {
+  height: 350px;
+  align-items: stretch;
+}

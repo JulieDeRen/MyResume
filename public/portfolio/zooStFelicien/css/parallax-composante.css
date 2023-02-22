@@ -1,0 +1,231 @@
+.parallax-composante {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  }
+  
+.parallax {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+}
+
+[id=description]{
+  width: 70vw;
+}
+
+[id=description] h2 {
+  font-size: calc(var(--size-font)*2.2);;
+  margin-bottom: 40px; 
+  text-align: justify;
+}
+
+[id=mission-statement] {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.button-participe {
+  letter-spacing: 0.5px;
+  padding: 15px 20px; 
+  background-color: var(--color-main-bleu);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  transition-duration: 100ms;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15); 
+  font-weight: bold;
+  font-size:20px;
+  margin-bottom: 60px;
+}
+
+.button-participe:hover{ 
+  background-color: var(--color-rose);
+  color: white;
+  padding: 15px 30px;
+  transition: 150ms;
+}
+  
+[id=first] {
+  background:  url("../img/winne_cherche_sa_mere_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+  
+[id=first-portail] {
+  background:  url("../img/hercule_et_les_suricatsbrothers_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+  
+[id=second] {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+  
+[id=third] {
+  background-image:  url("../img/Caribon_le_caribou_cropped_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+  
+[id=fourth] {
+  background: white;
+}
+
+[id=first-fiche-bas] {
+  background:  url("../img/anneta_cougar_7_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+[id=second-fiche-bas] {
+  background:  url("../img/anneta_cougar_7_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+  
+[id=first-fiche] {
+  background:  url("../img/anneta_cougar_run.webp");
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+[id=third-fiche] {
+    background-image:  url("../img/baby_cougars.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    }
+
+[id=third-fiche-bas] {
+  background-image:  url("../img/Caribon_le_caribou_cropped_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+  
+.parallax-description {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-family: sans-serif;
+  /*max-height: 100vh;*/
+  border: 0;
+  margin: 0;
+  padding: 0 0 120px 0;
+}
+
+.parallax-description-horizontal{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.parallax-description h2 {
+  font-size: 30px;
+  background-color:  #ffffff;
+  padding: 8px 24px;
+  border-radius: 0 24px 24px 0;
+  margin-bottom: 60px;
+}
+
+.parallax-description aside {
+  max-width: 40vw;
+  border: 2px solid var(--color-main);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.parallax-description aside h4 {
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.parallax-description aside p{
+  font-size : 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.parallax-description img{
+  object-fit: cover;
+  max-width: 35vw;
+}
+
+[id=description] h3 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+[id=description]>h3{
+  margin-top: 20px;
+}
+
+[id=description] small{
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+[id=description] p{
+  text-align: left;
+  font-size : 18px;
+  font-weight: normal;
+  max-width: 50vw;
+}
+  
+@media all and (max-width: 850px){
+
+  .participe h2 {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+}
+
+@media all and (max-width: 595px){
+
+  [id=mission-statement] h2 {
+    font-size: calc(var(--size-font)*2.5);
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media all and (max-width: 550px){
+
+  [id=mission-statement] h2 {
+    font-size: calc(var(--size-font)*2);
+  }
+}
+
+@media all and (max-width: 450px){
+  [id=mission-statement] h2 {
+    font-size: calc(var(--size-font)*1.75);
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media all and (max-width: 330px){
+  [id=mission-statement] h2 {
+    font-size: calc(var(--size-font)*1.5);
+    margin-left: 20px;
+    margin-right: 20px;
+  }    
+}

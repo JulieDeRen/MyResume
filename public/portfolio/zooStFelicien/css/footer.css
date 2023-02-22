@@ -1,0 +1,85 @@
+/*** ANCHOR footer ***/
+
+/* Donner un style « boîte de couleur » et le dégager des côtés de la fenêtre */
+body>footer {
+  background-color: var(--color-main-bleu);
+}
+
+.footer-line {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content:center;
+  align-items: center;
+  max-height: 100%;
+  background-color: var(--color-main-bleu);
+  color: white;
+}
+
+.footer{
+  margin: -20px 20px 20px 20px; /* se rapprocher des phoquer mais aller cacher bouton j'économise pour éviter de faire de la publicité pour enfant */
+}
+
+.footer-line>a:hover{ 
+  background-color: var(--color-main); 
+  color: black;
+  border-radius: 10px 0 10px 0; 
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15); 
+}
+      
+.footer-line a {
+  margin: 0px;
+  background-color: none;
+  width: 100%;
+  line-height: 60px;
+  border-radius: 0;
+  text-align: center;
+  padding: 5px; 
+  text-decoration : none; 
+  z-index: 99; /* pour être par dessus le bloque bleu qui cache les phoques */
+}
+
+/* Barre sombre */
+.footer-infos {
+  background-color: var(--color-main);
+  padding: 10px 0; 
+  min-height: 100%;
+}
+
+.footer-infos-contenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100rem;
+  margin: 0 0 0 -30px;
+}
+
+/* Infos additionnelles */
+.footer-infos-contenu {
+  font-style: italic;
+  color: black;
+  font-weight: bold;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* exception à la règle générale */
+.footer-infos-contenu small {
+  margin-top: 0;
+
+}
+
+.pied-de-page{
+  margin-top: 0px;
+}
+
+.pied-de-page-marge-haut{
+  margin-top: 160px;
+}
+
+@media all and (max-width: 682px){
+  .footer-line {
+    grid-template-columns: repeat(2, 1fr); /* pour permettre d'adapter facilement */
+  }
+}
+

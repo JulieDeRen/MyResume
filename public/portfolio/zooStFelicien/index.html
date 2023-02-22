@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Roy-Rizzoli & Julie Renaud">
+    <title>Zoo de Val-Jalbert</title>
+    <link rel="stylesheet" href="./css/utilitaires.css"/>
+    <link rel="stylesheet" href="./css/parallax-composante.css"/>
+    <link rel="stylesheet" href="./css/media-queries.css"/>
+    <link rel="stylesheet" href="./css/carrousel-grid.css"/>
+    <link rel="stylesheet" href="./css/voiles.css"/>
+    <link rel="stylesheet" href="./css/contenu-sur-image.css">
+    <link rel="stylesheet" href="./css/content-on-bloc.css">
+    <link rel="stylesheet" href="./css/bloc-de-couleur.css">
+    <link rel="stylesheet" href="./css/bouton-langue.css">
+    <link rel="stylesheet" href="./css/nav-principale.css">
+    <link rel="stylesheet" href="./css/phoque.css">
+    <link rel="stylesheet" href="./css/mission.css">
+    <link rel="stylesheet" href="./css/reviews.css">
+    <link rel="stylesheet" href="./css/id-plus.css">
+    <link rel="stylesheet" href="./css/call-to-action.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/navigation-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <header class="content-on-image box-shadow content-on-image-accueil" id="header">
+    <img src="./img/1920x1200-2bebes-cougars.jpg" alt="Banniere" class="banniere">
+    <!--Source : Nitish Tyagi https://codepen.io/nikkk-me/pen/abvPjeG * Modifié-->
+    <div class="switch-button">
+      <input name = "langue" class="switch-button-checkbox" type="checkbox">
+      <label class="switch-button-label" for="langue"><span class="switch-button-label-span">Français</span></label>
+    </div>
+    <h1 class="veil-black home-page-header">Le seul Zoo en forêt au Québec.</h1>
+    <a href="" class="button">Venez voir nos lynx et carcajous en liberté!</a> 
+  </header>
+  <nav class="navigation-principale nav" id="navigation-principale">
+    <a href="index.html" class="box-shadow" id="aLogo"><img src="img/logo.png" alt="logo-zoo" class="logo">Val-Jalbert</a>
+    <a href="portail.html" class="box-shadow">Informations</a>   
+    <a href="" class="box-shadow">Activités</a>    
+    <a href="fiche.html" class="box-shadow">À propos</a>    
+    <a href="" class="box-shadow">Nos initiatives</a>  
+    <a href="" class="box-shadow">Billeterie</a>  
+    <a href="" class="box-shadow">Contactez-nous</a>  
+  </nav>
+  <input type="checkbox">
+  <nav class="navigation-mobile">
+    <a href="portail.html" >Informations</a>   
+    <a href="" >Activités</a>  
+    <a href="" >Billeterie</a>    
+    <a href="fiche.html">À propos</a>    
+    <a href="">Nos initiatives</a>  
+  </nav>
+  <section id="mission-statement">
+    <h2 class="mission">Le Zoo de Val-Jalbert met en vedette les animaux québécois les plus sournois et ce, dans <!--<strong>-->un décor forestier enchanteur.<!--</strong>--></h2>
+    <div class="flex-horizontal">
+      <article class="content-on-image content-on-block">
+        <img src="img/zoo-g45825db71_1920.jpg" alt="Animaux">
+        <a href="" class="large-button">Venez vous promener librement au milieu des lynx, carcajous et ours bruns.</a>
+      </article>
+      <article class="content-on-image content-on-block">
+        <img src="img/seal-g4f1c7ddd3_1920.jpg" alt="Famille">
+        <a href="" class="large-button">Voir nos activités familiales</a>
+      </article>
+    </div>
+  </section>
+  
+  <section id="map">
+    <article class="flex-horizontal">
+      <div class="one-third colored-block-promo flex-vertical">
+        <h3>À seulement 6 heures de Montréal et 30 minutes de Chicoutimi!</h3>
+      </div>
+      <div class="two-thirds flex-vertical">
+        <img src="img/rhinoceros-g9ac38d61a_1920.jpg" alt="Google Map">
+      </div>
+    </article>
+  </section>
+
+  <section id="plus">
+    <h2>Apprenez-en plus sur le zoo de Val-Jalbert!</h2>
+    <article class="flex-horizontal">
+      <div class="one-third flex-vertical">
+        <img src="img/cougar_cours.jpeg" alt="Cougar">
+      </div>
+      <div class="two-thirds colored-block flex-vertical" onclick="Rediriger()">
+        <h4>Le cougar, typiquement québécois!</h4>
+        <a href="fiche.html">Voir nos animaux</a>
+      </div>
+    </article>
+
+    <article class="flex-horizontal">
+      <div class="one-third flex-vertical">
+        <img src="img/polar-bear-gf55ba3140_1920.jpg" alt="Village">
+      </div>
+      <div class="two-thirds colored-block flex-vertical" onclick="Rediriger()">
+        <h4>Un village plein d'histoires!</h4>
+        <a href="">Voir nos articles</a>
+      </div>
+    </article>
+    <article class="flex-horizontal">
+      <div class="one-third flex-vertical">
+        <img src="img/meerkat-gcb763d818_1920.jpg" alt="Promo">
+      </div>
+      <div class="two-thirds colored-block flex-vertical" onclick="Rediriger()">
+        <h4>Devenez membre et recevez un écusson de votre choix!</h4>
+        <a href="">Voir nos promotions</a>
+      </div>
+    </article>
+  </section>
+
+  <section id="reviews" class="content-on-image box-shadow">
+    <img src="img/giraffe-gec4ece915_1920.jpg" alt="Fond texturé">
+    <h3 class="veil-white promo">Nos visiteurs sont unanimes!</h3>
+    <span class="triangle-rectangle"></span>
+    <div class="flex-horizontal reviews">
+      <article class="one-third colored-block">
+        <h5>«&nbsp;Un plaisir pour petits et grands!&nbsp;»</h5>
+        <small>Jean-Michel Criquet<br>La Presse (2019)</small>
+      </article>
+      <article class="one-third colored-block">
+        <h5>«&nbsp;J'aurais dû visiter le Zoo de Val-Jalbert bien avant!&nbsp;»</h5>
+        <small>Elianne Cassegrain<br>Le journal de Montréal (2021)</small>
+      </article>
+      <article class="one-third colored-block">
+        <h5>«&nbsp;Un parc qui se soucie du bien être de la faune!&nbsp;»</h5>
+        <small>Raymond Plouque<br>Le journal de Val-Jalbert (2018)</small>
+      </article>
+    </div>
+  </section>
+  <section class="espacement">
+  </section>
+  <section class="parallax-description">
+    <div id="first" class="parallax">
+    </div>
+    <div id="second" class="parallax">
+      <div class="parallax-text">
+        <section id="mission-statement">
+          <h2 class="mission">Aidez-nous à préserver la faune québécoise et sournoise !  Contribuez à l’essor de l’ours noir et participez à notre programme de survie solitaire. Découvrez nos initiatives de protection du caribou.</h2>
+          <!--<a class="button-participe">Je participe</a>-->
+        </section>
+      </div>
+    </div>
+    <div id="third" class="parallax">
+    </div>
+  </section>
+
+  <section id="call-action" class="flex-horizontal">
+    <article class="flex-vertical">
+      <h3 class="promo">Devenez membre et économisez!</h3>
+      <small>Obtenez un accès privilégié et illimité pour 20$ par année</small>
+      <a href="" class="button-economie">J'économise!</a>
+    </article>
+  </section>
+
+  <footer class="pied-de-page">
+    <!--Source : Suzanne Aitchison, https://codepen.io/aitchiss/pen/ZEQRpax * Modifié-->
+    <div class="box-canvas">
+      <div class="seal">
+        <div class="mask">
+          <div class="whisker left"></div>
+          <div class="whisker right"></div>
+        </div>
+        <div class="brow left"></div>
+        <div class="brow right"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+        <div class="nose">
+          <div class="nostrils"></div>
+        </div>
+      </div>
+      <div class="seal-centre">
+        <div class="mask">
+          <div class="whisker left"></div>
+          <div class="whisker right"></div>
+        </div>
+        <div class="brow left"></div>
+        <div class="brow right"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+        <div class="nose">
+          <div class="nostrils"></div>
+        </div>
+      </div>
+      <div class="seal-droite">
+        <div class="mask">
+          <div class="whisker left"></div>
+          <div class="whisker right"></div>
+        </div>
+        <div class="brow left"></div>
+        <div class="brow right"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+        <div class="nose">
+          <div class="nostrils"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-line">
+        <a href="" class="one-third">Services aux écoles</a>    
+        <a href="" class="one-third">Partenaires</a>    
+        <a href="" class="one-third">Boutique</a>    
+        <a href="" class="one-third">Faire un don</a>    
+        <a href="" class="one-third">Notre équipe</a>    
+        <a href="" class="one-third">Carrières</a>    
+        <a href="" class="one-third">Contactez-nous</a>    
+        <a href="" class="one-third">English</a>    
+      </div>
+    </div>
+    <div class="footer-infos">
+      <div class="footer-infos-contenu">
+        <small>&copy; Zoo de Val-Jalbert</small>
+        <small>1234, boulevard Duvernay, Val-Jalbert (Quebec)</small>
+        <small>T. 514-123-4567</small>
+      </div>
+    </div>
+  </footer>
+  <script>
+    
+    let header = document.querySelector("#navigation-principale");
+    let lastScrollValue = 0;
+
+    document.addEventListener('scroll',() => {
+        let top  = document.documentElement.scrollTop;
+        if(lastScrollValue < top) {
+          header.classList.add("hidden");
+        } else {
+          header.classList.remove("hidden");
+        }
+        lastScrollValue = top;
+    });
+
+    function Rediriger(){
+      location.replace("fiche.html");
+    }
+
+  </script>
+</body>
+</html>
+

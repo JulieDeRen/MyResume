@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Roy-Rizzoli & Julie Renaud">
+    <title>Zoo de Val-Jalbert</title>
+    <link rel="stylesheet" href="css/utilitaires.css"/>
+    <link rel="stylesheet" href="css/parallax-composante.css"/>
+    <link rel="stylesheet" href="css/media-queries.css"/>
+    <link rel="stylesheet" href="css/carrousel-grid.css"/>
+    <link rel="stylesheet" href="css/voiles.css"/>
+    <link rel="stylesheet" href="css/contenu-sur-image.css">
+    <link rel="stylesheet" href="css/content-on-bloc.css">
+    <link rel="stylesheet" href="css/bloc-de-couleur.css">
+    <link rel="stylesheet" href="css/bouton-langue.css">
+    <link rel="stylesheet" href="css/nav-principale.css">
+    <link rel="stylesheet" href="css/phoque.css">
+    <link rel="stylesheet" href="css/mission.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/id-plus.css">
+    <link rel="stylesheet" href="css/call-to-action.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navigation-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header class="content-on-image box-shadow" id="header">
+        <img src="img/kim_la_tigresse_1920.jpg" alt="Banniere ours blanc" class="banniere">
+        <div class="switch-button">
+          <input name = "langue" class="switch-button-checkbox" type="checkbox">
+          <label class="switch-button-label" for="langue"><span class="switch-button-label-span">Français</span></label>
+        </div>
+        <h1 class="veil-black">Portail des animaux</h1>
+    </header>
+    <nav class="navigation-principale nav" id="navigation-principale">
+        <a href="index.html" class="box-shadow" id="aLogo"><img src="img/logo.png" alt="logo-zoo" class="logo">Val-Jalbert</a>
+        <a href="index.html" class="box-shadow">Accueil</a>   
+        <!--<a href="portail.html" class="box-shadow">Informations</a>-->
+        <a href="" class="box-shadow">Activités</a>    
+        <a href="fiche.html" class="box-shadow">À propos</a>    
+        <a href="" class="box-shadow">Nos initiatives</a>  
+        <a href="" class="box-shadow">Billeterie</a>  
+        <a href="" class="box-shadow">Contactez-nous</a>  
+    </nav>
+    <input type="checkbox">
+    <nav class="navigation-mobile">
+      <a href="portail.html" >Informations</a>   
+      <a href="" >Activités</a> 
+      <a href="" >Billeterie</a>     
+      <a href="fiche.html">À propos</a>    
+      <a href="">Nos initiatives</a>  
+    </nav>
+    <section id="mission-statement">
+        <h2 class="mission">Découvrez tous les animaux auxquels vous aurez accès en vous baladant dans notre zoo en forêt.</h2>
+    </section>
+    <section class="parallax-composante">
+      <div id="first-portail" class="parallax">
+      </div>
+    </section>
+    <section id="plus">
+        <h2>Animaux en vedette</h2>
+        <article class="flex-horizontal">
+            <div class="one-third flex-vertical">
+                <img src="img/carcajou_640.jpg" alt="Carcajou">
+            </div>
+            <div class="two-thirds colored-block flex-vertical" onclick="Rediriger()">
+                <h4>Le Glouton ou Carcajou, est un mammifère au régime alimentaire omnivore à dominance carnivore.</h4>
+                <a href="">Découvrez le carcajou</a>
+            </div>
+        </article>
+        <article class="flex-horizontal">
+            <div class="one-third flex-vertical">
+                <img src="img/ours_noir_drole_640.jpg" alt="Ours noir">
+            </div>
+            <div class="two-thirds colored-block flex-vertical" onclick="Rediriger()">
+                <h4>L’Ours noir, aussi appelé baribal, est l’ours le plus commun en Amérique du Nord.</h4>
+                <a href="">Découvrez l’ours noir</a>
+            </div>
+        </article>
+        <article class="flex-horizontal">
+        <div class="one-third flex-vertical">
+            <img src="img/lynx-gee3a86d80_1920-1.jpg" alt="Lynx">
+        </div>
+        <div class="two-thirds colored-block flex-vertical" onclick="Rediriger()">
+            <h4>Les lynx sont aisément reconnaissables à leur face ornée de favoris.</h4>
+            <a href="">Découvrez le lynx</a>
+        </div>
+        </article>
+    </section>
+    <section class="carrousel-grid">
+      <h2>Nos animaux !</h2>
+      <form action="" class="rechercher">
+        <label for="rechercher">Filtrer les animaux</label>
+          <select name="rechercher" id="rechercher">
+            <option value="0">- Types d'animaux - </option>
+            <option value="1">Amphibien</option>
+            <option value="2">Oiseau</option>
+            <option value="3">Canin</option>
+            <option value="4">Félin</option>
+            <option value="5">Mustélidé</option>
+          </select>
+      </form>
+      <div class="grille">
+        <article class="conteneur">
+            <img src="img/charles_le_coyotte_640.jpg" alt="Charles le coyotte">
+            <div class="description">
+              <div class="description-texte">
+                <h4>Charles le coyotte</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque ipsum perspiciatis, dolorum libero adipisci?</p>
+              </div>
+            </div>
+        </article>
+        <article class="conteneur">
+          <img src="img/bob_le_lynx_640.jpg" alt="Bob le lynx">
+          <div class="description">
+            <div class="description-texte">
+              <h4>Bob le Lynx</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque ipsum perspiciatis, dolorum libero adipisci?</p>
+            </div>
+          </div>
+      </article>
+      <article class="conteneur">
+        <img src="img/katrina_la_carcajou.jpg" alt="Katrina la carcajou">
+        <div class="description">
+          <div class="description-texte">
+            <h4>Katrina la carcajou</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque ipsum perspiciatis, dolorum libero adipisci?</p>
+          </div>
+        </div>
+    </article>
+    <article class="conteneur">
+      <img src="img/coco_channel_la_paresseuse_640.jpg" alt="Coco Channel la paresseuse">
+      <div class="description">
+        <div class="description-texte">
+          <h4>Coco Channel la paresseuse</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque ipsum perspiciatis, dolorum libero adipisci?</p>
+        </div>
+      </div>
+    </article>
+    <article class="conteneur">
+      <img src="img/cybelle_ours_noir_640.jpg" alt="Cybelle l'ours noir">
+      <div class="description">
+        <div class="description-texte">
+          <h4>Cybelle l'ours noir</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque ipsum perspiciatis, dolorum libero adipisci?</p>
+        </div>
+      </div>
+    </article>
+    <article class="conteneur">
+      <img src="img/diogene_1920.jpg" alt="Diogene le tamarin empereur">
+      <div class="description">
+        <div class="description-texte">
+          <h4>Diogene le tamarin empereur</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque ipsum perspiciatis, dolorum libero adipisci?</p>
+        </div>
+      </div>
+    </article>
+    <article class="conteneur">
+      <img src="img/don_juan_le_flaman_640.jpg" alt="Don Juan le flamant">
+      <div class="description">
+        <div class="description-texte">
+          <h4>Don Juan le flamant</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque ipsum perspiciatis, dolorum libero adipisci?</p>
+        </div>
+      </div>
+    </article>
+    <article class="conteneur">
+      <img src="img/ella_la_louve_640.jpg" alt="Ella la louve">
+      <div class="description">
+        <div class="description-texte">
+          <h4>Ella la louve</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque ipsum perspiciatis, dolorum libero adipisci?</p>
+        </div>
+      </div>
+    </article>
+    <article class="conteneur">
+      <img src="img/george_le_grizzly_640.jpg" alt="George le grizzly">
+      <div class="description">
+        <div class="description-texte">
+          <h4>George le grizzly</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque ipsum perspiciatis, dolorum libero adipisci?</p>
+        </div>
+      </div>
+    </article>
+    </div>
+    </section>
+    <section>
+        <div class="flex-horizontal">
+          <article class="content-on-block">
+            <img src="img/bebeCougar.webp" alt = "adopter un bébé cougar">
+          </article>
+          <article class="content-on-block">
+            <div class="colored-block flex-vertical block">
+                <h2 class="mission">Parrainez un cougar <span>Chaque parrainage permet à un cougar de retouver sa liberté dans nos forêts québécoises.</span></h2>
+                <button class="button-parrainage">Je parraine !</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+  <footer class="pied-de-page pied-de-page-marge-haut">
+    <!--Source : Suzanne Aitchison, https://codepen.io/aitchiss/pen/ZEQRpax * Modifié-->
+    <div class="box-canvas">
+      <div class="seal">
+        <div class="mask">
+          <div class="whisker left"></div>
+          <div class="whisker right"></div>
+        </div>
+        <div class="brow left"></div>
+        <div class="brow right"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+        <div class="nose">
+          <div class="nostrils"></div>
+        </div>
+      </div>
+      <div class="seal-centre">
+        <div class="mask">
+          <div class="whisker left"></div>
+          <div class="whisker right"></div>
+        </div>
+        <div class="brow left"></div>
+        <div class="brow right"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+        <div class="nose">
+          <div class="nostrils"></div>
+        </div>
+      </div>
+      <div class="seal-droite">
+        <div class="mask">
+          <div class="whisker left"></div>
+          <div class="whisker right"></div>
+        </div>
+        <div class="brow left"></div>
+        <div class="brow right"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+        <div class="nose">
+          <div class="nostrils"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-line">
+        <a href="" class="one-third">Services aux écoles</a>    
+        <a href="" class="one-third">Partenaires</a>    
+        <a href="" class="one-third">Boutique</a>    
+        <a href="" class="one-third">Faire un don</a>    
+        <a href="" class="one-third">Notre équipe</a>    
+        <a href="" class="one-third">Carrières</a>    
+        <a href="" class="one-third">Contactez-nous</a>    
+        <a href="" class="one-third">English</a>    
+      </div>
+    </div>
+    <div class="footer-infos">
+      <div class="footer-infos-contenu">
+        <small>&copy; Zoo de Val-Jalbert</small>
+        <small>1234, boulevard Duvernay, Val-Jalbert (Quebec)</small>
+        <small>T. 514-123-4567</small>
+      </div>
+    </div>
+  </footer>
+  <script>
+    let header = document.querySelector("#navigation-principale");
+    let lastScrollValue = 0;
+
+    document.addEventListener('scroll',() => {
+        let top  = document.documentElement.scrollTop;
+        if(lastScrollValue < top) {
+          header.classList.add("hidden");
+        } else {
+          header.classList.remove("hidden");
+        }
+        lastScrollValue = top;
+    }); 
+
+    function Rediriger(){
+      location.replace("fiche.html");
+    }
+
+  </script>
+</body>
+</html>

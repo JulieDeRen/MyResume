@@ -1,0 +1,25 @@
+/*** Voiles ***/
+
+.veil-black, .veil-white {
+  line-height: 1;
+  border-radius: 10px;
+}
+
+.veil-white {
+  padding: 15px 20px; 
+  margin-left: -550px; /* pour voir et d'apprécier l'image de la giraffe.  Plus de dynamisme*/
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15); /* ajouter un peu de profondeur de champs à cette boite */
+}
+
+.veil-black {
+  background-color: rgba(0,0,0,0.25);
+  padding: 15px 20px; 
+}
+
+.veil-white {
+  background-color: rgba(255,255,255,0.75);
+}
+
+.veil-white {
+  font-size: 2rem;
+}

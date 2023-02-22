@@ -1,0 +1,42 @@
+/*** ANCHOR reviews ***/
+
+[id=reviews] {
+  min-height: 420px;
+  justify-content: flex-end;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+  
+/* Boite de couleur (pour varier le rythme de la page) */
+[id=reviews]>img {
+  margin: auto 0;
+}
+  
+/* Écarte le titre des boites de couleurs et laisse le fond texturé respirer */
+[id=reviews].content-on-image>h3 {
+  margin-bottom: 170px; 
+}
+  
+/* Pour que le flex horizontal prenne toute la largeur */
+[id=reviews].content-on-image>div {
+  margin-bottom: 20px;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Rapproche le titre de son sous-titre */
+[id=reviews] .colored-block>h5 {
+  padding-bottom: 0;
+}
+
+[id=reviews] .colored-block>small {
+  text-align: center;
+}
+  
+  

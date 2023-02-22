@@ -1,0 +1,35 @@
+  /*** ANCHOR call to action ***/
+
+/* Dégage du reste de la page pour créer emphase */
+[id=call-action] {
+    margin-top: 120px;
+}
+  
+[id=call-action] article {
+  width: 100%;
+}
+
+/* Texte plus gros */
+[id=call-action] a {
+  margin-top: 40px;
+  font-size: calc(var(--size-font) * 1.5);
+}
+
+[id=call-action] small {
+  font-size: calc(var(--size-font) * 1.1);
+}
+
+/* Animation unique */
+[id=call-action] a:hover {
+  text-decoration: underline;
+}
+
+[id=call-action] a {
+  text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+  text-underline-offset: 0.2em;
+}
+
+[id=call-action] a:hover,
+[id=call-action] a:focus {
+  text-decoration-color: rgba(255, 255, 255, 1);
+}

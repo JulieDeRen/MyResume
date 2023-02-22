@@ -1,0 +1,23 @@
+/*** ANCHOR plus ***/
+  
+[id=plus] img {
+  height: 200px;
+  width: 100%;
+  align-items: stretch;
+}
+
+[id=plus] div {
+  height: 200px;
+  align-items: flex-start;
+}
+
+/* Augmente la marge à gauche du texte dans les cases de couleur*/
+[id=plus] div.colored-block>* {
+  padding: 0 0 0 30px;
+  text-align: left;
+}
+
+/* réduire l'espace du dessus et pas possible de changer le sélecteur du body sans affecter la nav */
+[id=plus] h2{
+  margin-top: -50px; 
+}

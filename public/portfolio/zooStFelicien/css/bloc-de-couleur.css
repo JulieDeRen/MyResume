@@ -1,0 +1,48 @@
+    /*** Blocs de couleur ***/
+      
+.colored-block {
+  background-color: var(--color-main-bleu);
+  border-radius: 3px;
+}
+[id=plus] .colored-block:hover {
+  background-color: var(--color-rose);
+  transition: 200ms;
+  animation-delay: 100ms;
+  cursor: pointer;
+}
+
+/* pour centrer à l'intérieur des bloques de couleur */
+.colored-block>* {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  color: var(--color-font-emph);
+}
+
+/* Pour diminuer la distance entres éléments successifs */
+.colored-block>*+* {
+  padding-top: 10px;
+} 
+
+/* Bloc de couleur pour la promo*/
+    
+/* j'ai ajouté cette sélection pour modifier la couleur et créer de la variation */
+.colored-block-promo {
+  background-color: var(--color-main-darkened);
+  border-radius: 3px;
+  }
+
+/* pour centrer à l'intérieur des bloques de couleur */
+.colored-block-promo>* {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  color: var(--color-font-emph);
+}
+
+/* Pour diminuer la distance entres éléments successifs */
+.colored-block-promo>*+* {
+  padding-top: 10px;
+}

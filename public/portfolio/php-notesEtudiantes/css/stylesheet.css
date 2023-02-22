@@ -1,0 +1,373 @@
+html, body {
+    margin: 0 0 80px 0;
+    padding: 0;
+    background: white;
+}
+.navigation-test{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #111;
+}
+.navigation-test a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: silver;
+}
+.navigation-test a:hover{
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+/*-------Ref en bas du style sheet.  Certains éléments ont été modifiés-----------------------*/
+.glow-on-hover {
+    width: 230px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}/*-------Ref en bas de la stylesheet pour code d'origine-----*/
+
+.form-style-1 { 
+    max-width: 460px;
+    padding: 20px 20px 20px 20px; 
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+    z-index: -1;
+    margin-top: 20px;
+}
+
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 5px 0 0 0; 
+}
+.form-style-1 div{
+    display: inline-flex;
+    align-items: left;
+    text-align: left;
+    margin: 20px 0;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.form-style-1 label{
+    padding:3px;
+    display:block;
+    font-weight: normal;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    
+}
+
+.form-style-1 input[type=text], .form-style-1 select{
+    box-sizing: border-box;
+    border-radius: 5px; 
+    border:1px solid tomato;
+    box-shadow: 1px 1px 3px black;
+    padding: 10px; 
+    margin:0px;
+    width: 200px;
+}
+.form-style-1 select:focus, .form-style-1 input[type=text]:focus{
+    box-shadow: 0 0 8px aqua;
+    border: 1px solid aqua;
+    border-radius: 2px;
+    outline: 2px solid rgb(44, 222, 222);
+    -moz-box-shadow: 0 0 8px aqua;
+    -webkit-box-shadow: 0 0 8px aqua;
+    box-shadow: 0 0 8px aqua;
+    border: 1px solid aqua;
+}
+.form-style-1 select, input[type=text]{
+    color: grey;
+}
+
+
+.form-style-1 .field-long{
+    width: 100%;
+}
+.form-style-1 .field-select{
+    width: 100%;
+}
+
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: rgb(44, 222, 222);
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 30px;
+    border:1px solid rgb(32, 163, 163);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    box-shadow: 1px 1px 3px black;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    padding: 12px 24px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    /*box-shadow: 2px 2px 5px black;*/
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    font-size: 1.2em;
+}
+
+.form-style-1 .required{
+    color:red;
+} 
+.form-style-2 { 
+    max-width: 460px;
+    padding: 20px 20px 20px 20px; 
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+    z-index: -1;
+    margin-top: 20px;
+}
+
+.form-style-2 li {
+    padding: 0;
+    display: inline;
+    list-style: none;
+    margin: 5px 0 0 0; 
+}
+
+.form-style-2 label{
+    padding:3px;
+    display: inline;
+    font-weight: normal;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    
+}
+
+.form-style-2 input[type=text], .form-style-1 select{
+    box-sizing: border-box;
+    border-radius: 5px; 
+    border:1px solid tomato;
+    box-shadow: 1px 1px 3px black;
+    padding: 10px; 
+    margin:0px;
+    width: 200px;
+}
+.form-style-2 select:focus, .form-style-2 input[type=text]:focus{
+    box-shadow: 0 0 8px aqua;
+    border: 1px solid aqua;
+    border-radius: 2px;
+    outline: 2px solid rgb(44, 222, 222);
+    -moz-box-shadow: 0 0 8px aqua;
+    -webkit-box-shadow: 0 0 8px aqua;
+    box-shadow: 0 0 8px aqua;
+    border: 1px solid aqua;
+}
+.form-style-2 select, input[type=text]{
+    color: grey;
+}
+
+
+.form-style-2 .field-long{
+    width: 100%;
+}
+.form-style-2 .field-select{
+    width: 100%;
+}
+
+.form-style-2 input[type=submit], .form-style-2 input[type=button]{
+    background: rgb(44, 222, 222);
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 30px;
+    border:1px solid rgb(32, 163, 163);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    box-shadow: 1px 1px 3px black;
+}
+.form-style-2 input[type=submit]:hover, .form-style-2 input[type=button]:hover{
+    padding: 12px 24px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    /*box-shadow: 2px 2px 5px black;*/
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    font-size: 1.2em;
+}
+
+.form-style-2 .required{
+    color:red;
+} 
+h1{
+    padding: 70px 0 20px 0;
+    text-align: center;
+    color: black;
+    font-size: 2vw;
+}
+h2, h3{
+    text-align: center;
+    color: black;
+    padding: 30px 0;
+}
+p{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.centrer{
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background-color: silver;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+table{
+    box-sizing: border-box;
+    border-radius: 5px; 
+    border:1px solid tomato;
+    box-shadow: 1px 1px 3px black;
+    padding: 10px; 
+    text-align: center;
+    margin: auto;
+}
+th, td{
+    border-collapse: collapse;
+    padding: 10px;
+    border-bottom: 1px solid tomato;
+    gap: 0;
+}
+
+
+/*Author: Kocsten
+Article : Hover glow effect
+Source : https://webdeasy.de/en/top-css-buttons-en/
+*Code source orginal/certains éléments ont été changés------------------------------*/
+
+/*.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}*/

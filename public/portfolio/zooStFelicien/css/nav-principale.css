@@ -1,0 +1,139 @@
+/*** ANCHOR navbar ***/  
+
+.nav:where(:not(.navigation-mobile)) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    height: 60px;
+    width: 90%;
+}
+  
+/* "Stickiness" */
+.nav:where(:not(.navigation-mobile)) {
+  position: sticky;
+  z-index: 99;
+  top: 0;
+  transition: 250ms;
+}
+
+.nav:where(:not(.navigation-mobile)) > a {
+  flex: 1 1 0;
+  background-color: var(--color-main);
+  padding: .4125em .75em;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;  
+  text-decoration: none;
+  margin-top: inherit;
+  white-space: nowrap;
+}    
+  
+/* Bordures entre les cases j'ai ajouté */
+.nav:where(:not(.navigation-mobile)) > a {
+  border-right-style: solid;
+  border-right-width: 3px; /*changé valeur*/
+  border-right-color: var(--color-main-clair);
+} 
+.nav:where(:not(.navigation-mobile))>a:hover{ 
+  background-color: var(--color-main-darkened);
+  color: var(--color-font-emph);
+}
+
+/* position du logo */
+a > img {
+  flex: 1 1 0;
+  height: 100%;
+  width: 100%;
+}  
+
+.logo:hover{
+  background-color: var(--color-main-darkened);
+}
+
+/* arrondi les extremités du navbar */
+.nav:where(:not(.navigation-mobile))>a:first-child {
+  border-radius: 0px 0 0 10px;
+}  
+
+.nav:where(:not(.navigation-mobile))>a:last-child {
+  border-radius: 0 0px 10px 0;
+  border: none;
+}
+[id=aLogo]{
+  color: black;
+  font-family: var(--font-titles);
+  text-transform: uppercase;
+}
+
+.logo{
+  height: 100%;
+  width: 60px;
+  display: inline-flex;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+/* Réf : https://jsfiddle.net/aq9Laaew/94076/ */
+.hidden{ /* switch-button*/
+  transition: 300ms;
+  transition-delay: 1s;
+  top:-80px;
+}
+  
+@media all and (max-width: 980px){
+  .nav {
+    width: 100%;
+  }
+  
+  /* arrondi les extremités du navbar */
+  .nav>a:first-child {
+    border-radius: 0px 0 0 20px; /* Ajouter de la rondeur pour apprécier pleinement la forme lorsque la navigation est à width 100% */
+    padding-left: 15px;
+  }  
+  
+  .nav>a:last-child {
+    border-radius: 0 0px 20px 0; /* Ajouter de la rondeur pour apprécier pleinement la forme lorsque la navigation est à width 100% */
+    border: none;
+  }
+}
+
+@media all and (max-width: 920px){
+  .navigation-principale a:not(:first-child, :nth-child(6), :last-child){
+    display: none;
+  }
+}
+
+@media all and (max-width: 615px){
+  /* changer la position pour fixed top 0 pour la navigation plutôt que de réordonner les élément flexbox (order : -1) parce qu'autrement il y aurait eu un jeu au niveau des coins arrondis de la navigation */
+  .navigation-principale{
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    transition-delay: 0.2s;
+  }
+
+  /* Alléger la composition pour support mobile : effet de retrait de la navigation lors du défilement vers le bas */
+  /* Réf : https://jsfiddle.net/aq9Laaew/94076/ */
+  .hidden{
+    top:-80px;
+  }
+}
+
+@media all and (max-width: 450px){
+  .navigation-principale a:not(:first-child, :nth-child(6)){
+    display: none;
+  }
+  
+  .navigation-principale a:nth-child(6){
+    border-radius: 0 0 20px 0;
+    border: 0px;
+  }
+}
+
+      
+   
+   
+      
+      
+   
+      
